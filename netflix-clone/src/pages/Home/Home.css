@@ -1,0 +1,132 @@
+.home {
+    width: 100%;
+    height: 100%;
+}
+
+.top-movie-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-movie-img img {
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.top-movie-title {
+    width: 100%;
+}
+
+.top-movie-info {
+    position: absolute;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+}
+
+.top-movie-info {
+    justify-content: left;
+}
+
+.top-movie-info p {
+    width: 80%;
+}
+
+.top-movie-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.play-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+}
+
+.play-btn:hover {
+    background-color: #ffffffd3;
+}
+
+.play-btn span {
+    width: 90%; 
+    height: 50%; 
+    padding: 5px; 
+    font-weight: bold; 
+    font-size: 1rem;
+}
+
+
+
+.play-cover {
+width: 30%; 
+display: flex; 
+flex-direction: row; 
+justify-content: space-between; 
+gap: 10px;
+}
+
+.line-board {
+width: 90%; 
+height: 90%;
+}
+
+.info-btn {
+    background: rgba(126, 126, 126, 0.377);
+    border: none;
+    width: 130px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.info-btn:hover {
+    background: rgba(126, 126, 126, 0.185);
+}
+
+.info-btn div {
+    width: 100%;
+    height: 100%;
+}
+
+.info-btn span {
+    width: 100%; 
+    height: 100%; 
+    padding: 5px; 
+    font-weight: bold; 
+    font-size: 1rem;
+    color: white;
+}
+
+.top-movie {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    position: absolute;
+    top: 74%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}

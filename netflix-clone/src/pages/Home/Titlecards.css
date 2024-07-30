@@ -1,0 +1,82 @@
+
+.picks-for-you {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: scroll;
+    overflow:visible;
+    height: 100px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.today-top-picks ::-webkit-scrollbar {
+    display: none;
+}
+
+.picks-for-you-img {
+    position: relative;
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 250px;
+    max-height: 150px;
+    transition: ease-out;
+}
+
+.picks-for-you-img:hover {
+    transform: scale(1.2);
+    
+}
+
+.picks-for-you-img img {
+    border-radius: 5px;
+}
+
+.slidebtnleft, .slidebtnright {
+    border: 1px solid white;
+    color: white;
+    max-height: 140px;
+}
+
+.slidebtnleft:active, .slidebtnright:active {
+    background-color: white;
+    color: black;
+    margin: 0px;
+    
+}
+
+.slidebtnleft {
+    height: 170px;
+}
+
+.slidebtnright {
+    position: absolute;
+    right: 2%;
+    height: 170px;
+}
+
+.popup-video {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(26, 26, 26);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.popup-video video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+  }

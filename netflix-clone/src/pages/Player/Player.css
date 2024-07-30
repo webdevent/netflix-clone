@@ -1,0 +1,52 @@
+.player {
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.backBtn {
+    background: transparent;
+    width: 60px;
+    height: 50px;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    justify-content: center;
+    position: absolute;
+    top: 88%;
+    left: 0%;
+}
+
+button {
+    display: block;
+    width: 70px;
+    height: 60px;
+    background: transparent;
+    border: none;
+}
+
+.player_info {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    width: 80%;
+}
+
+.pauseBtn {
+    display: none;
+}
+

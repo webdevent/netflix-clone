@@ -1,0 +1,50 @@
+
+.ContinueWatch {
+   
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.watching-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: scroll;
+    height: 150px;
+}
+
+.watching-title::-webkit-scrollbar {
+    display: none;
+}
+
+.cont-watching-tv {
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 250px;
+    max-height: 150px;
+}
+
+.cont-watching-tv img {
+    border-radius: 5px;
+}
+
+.bar-cover {
+    display:flex;
+    justify-content: center;
+}
+.progress-bar {
+    background-color: #ccc;
+    width: 70%;
+    height: 4px;
+    padding: 0px;
+    margin: auto;
+}
+
+.progress {
+    background-color: hsla(0, 100%, 55%, 0.911);
+    height: 100%;
+}

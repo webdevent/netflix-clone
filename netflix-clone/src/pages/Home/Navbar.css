@@ -1,0 +1,229 @@
+.header {
+    background: linear-gradient(rgb(14, 14, 14), transparent);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    padding: 0px 30px;
+    z-index: 3;
+    width: 100%;
+    height: 10%;
+    transition: ease-out;
+  }
+
+.scrolled {
+  background: linear-gradient(rgb(14, 14, 14), rgb(14, 14, 14));
+  color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    padding: 0px 30px;
+    z-index: 3;
+    width: 100%;
+    height: 10%;
+    transition: ease-in;
+}
+
+h1 {
+  width: 150px;
+  color: rgba(255, 0, 0, 0.884);
+}
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+  
+  .nav-list li {
+    list-style: none;
+    margin: auto 10px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #ccc;
+  }
+  
+  .nav-list li a:hover {
+    color: #ccccccc0;
+  }
+
+  
+  .account-btn, .bell-btn {
+    display: flex;
+    flex-direction: row;
+    width: 65px;
+    height: 40px;
+    padding: 1px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+.menuAro {
+  width: 15px;
+  height: 10px;
+  margin: 5px;
+  transform: rotate(180deg);
+}
+
+.menuAro:hover {
+  transform: rotate(0deg);
+}
+  
+  .li1 {
+    max-width: 230px;
+  }
+
+.li2 {
+  max-width: 200px;
+}
+
+.mag-cover {
+  width: 100%;
+  height: 100%;
+}
+  
+.mag {
+    width: 70px; 
+    height: 50px; 
+    justify-content: right;
+  }
+  
+  .search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row; 
+    background: transparent; 
+    border: none; 
+    width: 100%;
+    height: 100%;
+  }
+
+  .search p {
+    margin: 5px;
+    color: white;
+    font-size: 1rem;
+    display: none;
+  }
+  .searchTab {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(31, 31, 31);
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .searchbar {
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+    display: none;
+    color: white;
+    height: 20px;
+    background-color: rgb(31, 31, 31);
+  }
+
+  .searchbar:active {
+    background-color: rgba(221, 3, 3, 0.767);
+  }
+  
+  .profileTab {
+    background: url(../pictures/profileimage.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+.dropNotif {
+  position: absolute;
+  top: 100%;
+  right: 15%;
+  display: none;
+}
+
+.dropNotif ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.925);
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.dropNotif ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  height: 65px;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropNotif ul li img {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.dropMenu {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.dropMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.925);
+  width: 200px;
+  padding: 10px;
+}
+
+.dropMenu ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  color: #ccc;
+}
+
+.dropMenu ul li p:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.dropMenu ul li img {
+  width: 20%;
+  height: 80%;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+  
