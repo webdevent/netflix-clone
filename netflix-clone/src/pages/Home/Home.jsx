@@ -10,6 +10,7 @@ import title from '../pictures/stranger title.webp'
 import coverVideo from '../videos/stranger-things.mp4'
 import Topten from './Topten.jsx'
 import Footer from './Footer.jsx'
+import {Link} from 'react-router-dom'
 
 function Home() {
     const [name, setName] = useState('Daniel');
@@ -23,20 +24,22 @@ function Home() {
                     <div className="top-movie-info">
                         <img src={title} className="top-movie-title"/>
                         <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
-                        <div className='top-movie-btn'>
-                        <button className="play-btn">
-                            <div className='line-board'>
-                                <img src={playIcon} alt="Play" width="100%" height="100%"/>
-                            </div>
-                            <span>Play</span>
-                        </button>
-                        <button className="info-btn">
-                            <div>
-                                <img src={infoIcon} alt="Play" width="65%" height="100%"/>
-                            </div>
-                            <span>Info</span>
-                        </button>
-                    </div>
+                        <div className='top-movie-btns'>
+                            <Link to={`/player/Stranger Things`}>
+                                <button className="play-btn">
+                                    <div className='line-board'>
+                                        <img src={playIcon} alt="Play" width="100%" height="100%"/>
+                                    </div>
+                                    <span>Play</span>
+                                </button>
+                            </Link>
+                            <button className="info-btn">
+                                <div>
+                                    <img src={infoIcon} alt="Play" width="65%" height="100%"/>
+                                </div>
+                                <span>More Info</span>
+                            </button>
+                        </div>
                     </div>
                     <div className='body'>
                         <Topten/>

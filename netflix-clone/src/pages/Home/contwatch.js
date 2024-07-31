@@ -36,6 +36,18 @@ const contWatch = [
         title: 'Mech Cadets',
         image: Mech_Cadets,
         progress: 80
+    },
+    {
+        id: 5,
+        title: 'Desperate Lies',
+        image: des_lies,
+        progress: 40
+    },
+    {
+        id: 6,
+        title: 'Furies',
+        image: furies,
+        progress: 20
     }
 ]
 export default contWatch

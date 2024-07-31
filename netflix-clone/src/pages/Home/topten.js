@@ -12,7 +12,7 @@ import topMovieTen from '../pictures/beverleycop.jpg'
 const topTenList = [
     {
         number: 1,
-        name: 'Beverley Cop',
+        name: 'Beverly hills Cops',
         image: topMovieOne,
     },
     {
@@ -42,12 +42,12 @@ const topTenList = [
     },
     {
         number: 7,
-        name: 'Beverley Cop',
+        name: 'Beverly hills Cops',
         image: topMovieSeven,
     },
     {
         number: 8,
-        name: 'Beverley Cop',
+        name: 'Beverly hills Cops',
         image: topMovieEight,
     },
 ];

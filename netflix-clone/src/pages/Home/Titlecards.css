@@ -2,12 +2,11 @@
 .picks-for-you {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     overflow-x: scroll;
-    overflow:visible;
-    height: 100px;
-    margin-bottom: 60px;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -22,16 +21,16 @@ h3 {
 
 .picks-for-you-img {
     position: relative;
-    min-width: 200px;
+    min-width: 250px;
     min-height: 100px;
     max-width: 250px;
-    max-height: 150px;
-    transition: ease-out;
+    max-height: 130px;
+    margin: 10px 0px;
 }
 
 .picks-for-you-img:hover {
     transform: scale(1.2);
-    
+    z-index: 2;
 }
 
 .picks-for-you-img img {
@@ -39,20 +38,26 @@ h3 {
 }
 
 .slidebtnleft, .slidebtnright {
-    border: 1px solid white;
+    border-radius: 5px;
     color: white;
     max-height: 140px;
+    background-color: rgba(0, 0, 0, 0.534);
+   font-size: 50px;
+   z-index: 3;
 }
 
 .slidebtnleft:active, .slidebtnright:active {
     background-color: white;
     color: black;
     margin: 0px;
-    
+    z-index: 4;
 }
 
 .slidebtnleft {
     height: 170px;
+    position: absolute;
+    left: 2%;
+    z-index: 2;
 }
 
 .slidebtnright {
@@ -80,3 +85,28 @@ h3 {
     object-fit: cover;
     border-radius: 10px;
   }
+
+@media (max-width: 700px) {
+    .slidebtnleft, .slidebtnright {
+        display: none;
+    }
+    .picks-for-you-img {
+        min-width: 150px;
+        min-height: 100px;
+        max-width: 350px;
+        max-height: 200px;
+    }
+
+    .picks-for-you-img img {
+        border-radius: 0px;
+    }
+    
+    .picks-for-you {
+        overflow-x: scroll;
+        margin-bottom: 10px;
+        height: 100px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
