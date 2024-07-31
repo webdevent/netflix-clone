@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import movies from '../Home/movies.js'
 import Navbar from '../Home/Navbar.jsx'
 import './Search.css'
@@ -21,8 +22,10 @@ function Search () {
                     {movies.map((movie, index) => {
                         return (
                             <div className="searchImageCover" key={index}>
-                                <img src={movie.image} alt={movie.title} width="100%" height="100%"/>
-                                <h3>{movie.title}</h3>
+                                <Link to={`/player/${movie.title}`}>
+                                    <img src={movie.image} alt={movie.title} width="100%" height="100%"/>
+                                    <h3>{movie.title}</h3>
+                                </Link>
                             </div>
                         )
                     })}

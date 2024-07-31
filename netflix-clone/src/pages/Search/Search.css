@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 30px;
@@ -22,8 +22,18 @@
     margin-bottom: 50px;
 }
 
+.searchImageCover a {
+    text-decoration: none;
+    color: #ccc;
+}
+
 .search-container img {
     border-radius: 5px;
+}
+
+.search-container h3 {
+    font-size: 18px;
+    position: absolute;
 }
 
 .FilterList {

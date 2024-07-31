@@ -1,10 +1,11 @@
 import React, { createContext, useState } from "react";
+import { Link } from 'react-router-dom';
 import './Login.css'
 import logo from '../pictures/netflix-clone.png'
 
 function Login() {
     const [nameLogin, setNameLogin] = useState('');
-    const [signState, setSignState] = useState("Sign In")
+    const [signState, setSignState] = useState("Sign Up")
     const NameLoginContext = createContext();
     const handleNameChange = (event) => {
         setNameLogin(event.target.value);
@@ -17,10 +18,10 @@ function Login() {
             <div className="form-cover" >
                 <form className="form">
                     <h2>{signState}</h2>
-                    {signState==="Sign In"?<input type="text" placeholder="Your Name" value={nameLogin} onChange={handleNameChange}/>:<></>}
+                    {signState==="Sign Up"? <input type="text" placeholder="Your Name" value={nameLogin} onChange={handleNameChange}/>:<></>}
                     <input type="text" placeholder="Email or Phone Number"/>
                     <input type="password" placeholder="Password"/>
-                    <a href="http://localhost:5173/"><button className="btn">{signState}</button></a>
+                    <Link to={'/'}><button className="btn">{signState}</button></Link>
                     <div className="footer-line">
                         <div>
                             <input type="checkbox"/><span>Remember me</span>

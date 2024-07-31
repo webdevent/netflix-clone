@@ -43,11 +43,6 @@ function Navbar(props){
         searchBar.classList.toggle("showtab")
     }
 
-    function handleSearchSubmit(event) {
-        event.preventDefault();
-        const searchTerm = document.getElementById('searchBar').value;
-        history.push(`/search?q=${searchTerm}`); // <--- add this line
-    }
     
     return(
         <div className="header" ref={headerRef}>
@@ -59,19 +54,19 @@ function Navbar(props){
             <h3 className="netclonelg">NETCLONE</h3>
             <nav className="nav" id="nav">
                 <ul className="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="movies.html">Movies</a></li>
-                    <li><a href="tvshows.html">TV Shows</a></li>
-                    <li><a href="contact.html">New & Popular</a></li>
-                    <li><a href="contact.html">My List</a></li>
-                    <li><a href="contact.html">Browse By Language</a></li>
+                    <li><Link to={"/"}>Home</Link></li>
+                    <li><Link to={"/search"}>Movies</Link></li>
+                    <li><a>TV Shows</a></li>
+                    <li><a>New & Popular</a></li>
+                    <li><a>My List</a></li>
+                    <li><a>Browse By Language</a></li>
                 </ul>
                 <ul className="nav-list">
                     <li className='li1'>
                         <button className='search'>
                             <div className="searchTab" id="searchTab">
                                 <img src={magGlass} className="inMag" onClick={hideSearchBar}/>
-                                <input type="text" className="searchbar" id="searchBar" placeholder="title,people,genres" onKeyDown={handleSearchSubmit}/>
+                                <input type="text" className="searchbar" id="searchBar" placeholder="title,people,genres" />
                             </div>
                             <div className="mag-cover"  onClick={displaySearchBar}>
                                 <img src={magGlass} alt="search" className='mag' id="mag"/>

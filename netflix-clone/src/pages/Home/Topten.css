@@ -67,4 +67,8 @@
         text-shadow: 0px 0px 5px #ccc;
         color: black;
     }
+
+    .top-ten {
+        width: 350px;
+    }
 }

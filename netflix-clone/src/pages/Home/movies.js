@@ -15,7 +15,9 @@ import lobolaMan from '../pictures/lobola-man-squ.jpg'
 import triggerWarning from '../pictures/trigger-warning-squ.jpg'
 import awdy from '../pictures/awdy-squ.webp'
 import strangerThings from '../pictures/stranger-things-squ.jpg'
-import the_equal_vidoe from '../videos/the-equalizer-vidoe.mp4'
+import myDadBountyHunter from '../pictures/my-dad-the-bounty-hunter.jpg'
+import teenTitansGo from '../pictures/teen-titan-go.webp'
+import mechCadet from '../pictures/mech-candets.jpg'
 import vik_valh_vidoe from '../videos/vikings-valhalla.mp4'
 import des_lies_vidoe from '../videos/desperate-lies-vidoes.mp4'
 import furies_vidoe from '../videos/furies-vidoes.mp4'
@@ -25,20 +27,22 @@ import fireCountry_vidoe from '../videos/fire-country-video.mp4'
 import hunter_vidoe from '../videos/city-hunter-video.mp4'
 import aka_vidoe from '../videos/aka-video.mp4'
 import makoMerm_vidoe from '../videos/mako-mermaid-video.mp4'
-import beverlyCops_vidoe from '../videos/beverly-hills-cops.mp4'
 import aFamilyAffair_vidoe from '../videos/a-family-affair.mp4'
 import johnWWick_vidoe from '../videos/john-wick-vidoe.mp4'
 import lobolaMan_vidoe from '../videos/lobola-man-vidoe.mp4'
 import triggerWarning_vidoe from '../videos/trigger-warning-vidoe.mp4'
 import awdy_vidoe from '../videos/awdy-vidoes.mp4'
 import strangerThings_vidoe from '../videos/stranger-things.mp4'
+import myDadBountyHunter_vidoe from '../videos/my-dad-bounty-hunter.mp4'
+import teenTitansGo_vidoe from '../videos/teen-titans-go-video.mp4'
+import mechCadet_vidoe from '../videos/mech-cadets.mp4';
+
 
 const movies = [
     {
         id: 1,
         title: 'The Equalizer 2',
         image: the_equal,
-        video: the_equal_vidoe,
     },
     {
         id: 2,
@@ -104,7 +108,6 @@ const movies = [
         id: 12,
         title: 'Beverly hills Cops',
         image: beverlyCops,
-        video: beverlyCops_vidoe,
     },
     {
         id: 13,
@@ -135,6 +138,24 @@ const movies = [
         title: 'Stranger Things',
         image: strangerThings,
         video: strangerThings_vidoe,
+    },
+    {
+        id: 18,
+        title: 'Teen Titan Go',
+        image: teenTitansGo,
+        video: teenTitansGo_vidoe,
+    },
+    {
+        id: 19,
+        title: 'My Dad The Bounty Hunter',
+        image: myDadBountyHunter,
+        video: myDadBountyHunter_vidoe,
+    },
+    {
+        id: 20,
+        title: 'Mech Cadets',
+        image: mechCadet,
+        video: mechCadet_vidoe,
     }
 ]
 export default movies;

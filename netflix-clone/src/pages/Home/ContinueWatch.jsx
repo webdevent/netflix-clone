@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import contWatch from "./contwatch.js";
 import './ContinueWatch.css'
 
@@ -13,12 +14,14 @@ function ContinueWatch(props) {
                         {contWatch.map((movie, index) => {
                             return (
                                 <div className="cont-watching-tv" key={index}>
-                                    <img src={movie.image} alt={movie.title} width="100%"/>
-                                    <div className="bar-cover">
-                                        <div className="progress-bar">
-                                            <div className="progress" style={{ width: `${movie.progress}%` }}></div>
+                                    <Link to={`/player/${movie.title}`}>
+                                        <img src={movie.image} alt={movie.title} width="100%"/>
+                                        <div className="bar-cover">
+                                            <div className="progress-bar">
+                                                <div className="progress" style={{ width: `${movie.progress}%` }}></div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             )
                         })}

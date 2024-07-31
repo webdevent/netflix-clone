@@ -61,4 +61,7 @@ h3 {
         height: 100px;
         gap: 5px;
     }
+    .ContinueWatch {
+        width: 350px;
+    }
 }

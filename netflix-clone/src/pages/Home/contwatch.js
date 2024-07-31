@@ -27,7 +27,7 @@ const contWatch = [
     },
     {
         id: 3,
-        title: 'The Equalizer',
+        title: 'The Equalizer 2',
         image: the_equal,
         progress: 30
     },
