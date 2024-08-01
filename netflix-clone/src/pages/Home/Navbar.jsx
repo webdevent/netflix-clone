@@ -15,8 +15,7 @@ import '../Home/Navbar.css'
 
 function Navbar(props){
     const headerRef = useRef(null);
-    const exit = document.getElementById('exit')
-    const history = useNavigate()
+    const navGate = useNavigate();
     
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -43,6 +42,16 @@ function Navbar(props){
         searchBar.classList.toggle("showtab")
     }
 
+        const handleSearchBarKeyPress = (event) => {
+            const searchTerm =  event.target.value;
+            if (searchTerm === "") {
+                navGate("/"); // navigate to the home page if search bar is empty
+              } else {
+                navGate(`/search/${searchTerm}`); // navigate to the search page with the search term
+              }
+        };
+    
+
     
     return(
         <div className="header" ref={headerRef}>
@@ -66,7 +75,7 @@ function Navbar(props){
                         <button className='search'>
                             <div className="searchTab" id="searchTab">
                                 <img src={magGlass} className="inMag" onClick={hideSearchBar}/>
-                                <input type="text" className="searchbar" id="searchBar" placeholder="title,people,genres" />
+                                <input type="text" className="searchbar" id="searchBar" placeholder="title,people,genres" onChange={handleSearchBarKeyPress}/>
                             </div>
                             <div className="mag-cover"  onClick={displaySearchBar}>
                                 <img src={magGlass} alt="search" className='mag' id="mag"/>

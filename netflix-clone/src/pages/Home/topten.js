@@ -12,42 +12,42 @@ import topMovieTen from '../pictures/beverleycop.jpg'
 const topTenList = [
     {
         number: 1,
-        name: 'Beverly hills Cops',
+        name: 'beverly hills Cops',
         image: topMovieOne,
     },
     {
         number: 2,
-        name: 'A Family Affair',
+        name: 'a family affair',
         image: topMovieTwo,
     },
     {
         number: 3,
-        name: 'Are We Done Yet',
+        name: 'are we done yet',
         image: topMovieThree,
     },
     {
         number: 4,
-        name: 'Lobo Man',
+        name: 'lobo man',
         image: topMovieFour,
     },
     {
         number: 5,
-        name: 'John Wick',
+        name: 'john Wick',
         image: topMovieFive,
     },
     {
         number: 6,
-        name: 'Trigger Warning',
+        name: 'trigger warning',
         image: topMovieSix,
     },
     {
         number: 7,
-        name: 'Beverly hills Cops',
+        name: 'beverly hills Cops',
         image: topMovieSeven,
     },
     {
         number: 8,
-        name: 'Beverly hills Cops',
+        name: 'beverly hills Cops',
         image: topMovieEight,
     },
 ];

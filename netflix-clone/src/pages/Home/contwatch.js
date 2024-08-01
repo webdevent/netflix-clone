@@ -9,43 +9,43 @@ import Mech_Cadets from '../pictures/mech-candets.jpg'
 const contWatch = [
     {
         id: 1,
-        title: 'Teen Titan Go',
+        title: 'teen titan Go',
         image: teen_titan,
         progress: 90
     },
     {
         id: 2,
-        title: 'My Dad The Bounty Hunter',
+        title: 'my dad the bounty hunter',
         image: My_Dad_Hunter,
         progress: 70
     },
     {
         id: 3,
-        title: 'Viking Valhalla',
+        title: 'viking valhalla',
         image: vik_valh,
         progress: 60
     },
     {
         id: 3,
-        title: 'The Equalizer 2',
+        title: 'the equalizer 2',
         image: the_equal,
         progress: 30
     },
     {
         id: 4,
-        title: 'Mech Cadets',
+        title: 'mech cadets',
         image: Mech_Cadets,
         progress: 80
     },
     {
         id: 5,
-        title: 'Desperate Lies',
+        title: 'desperate lies',
         image: des_lies,
         progress: 40
     },
     {
         id: 6,
-        title: 'Furies',
+        title: 'furies',
         image: furies,
         progress: 20
     }

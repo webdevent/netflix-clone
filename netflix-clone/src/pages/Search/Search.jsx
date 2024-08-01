@@ -1,10 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import movies from '../Home/movies.js'
 import Navbar from '../Home/Navbar.jsx'
 import './Search.css'
 
 function Search () {
+    const searchParam = useParams()
+    const searchQuery = searchParam.q
+    const filteredMovies = movies.filter(movie => movie.title.toLowerCase().startsWith(searchQuery.toLowerCase()))
+    console.log(searchQuery);
     return (
         <div className="searchQu">
             <Navbar />
@@ -19,7 +23,7 @@ function Search () {
                     <li>House of Dragon</li>
                 </ul>
                 <div className="search-container">
-                    {movies.map((movie, index) => {
+                    {filteredMovies.map((movie, index) => {
                         return (
                             <div className="searchImageCover" key={index}>
                                 <Link to={`/player/${movie.title}`}>
